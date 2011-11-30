@@ -37,8 +37,9 @@ exports.serialize = (record, buffer, offset) ->
     else if type is types.int
       buffer.writeInt32BE value, fixed(4)
     else if type is types.long
+      ensure 8
       buffer.fill 0, offset, offset + 8
-      value.toBuffer().copy(buffer, fixed(8))
+      value.toBuffer(size: 8).copy(buffer, fixed(8))
     else if type is types.float
       buffer.writeFloatBE value, fixed(4)
     else if type is types.double
