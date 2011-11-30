@@ -1,0 +1,37 @@
+{
+  "name" : "jute",
+  "description" : "Hadoop record I/O in pure JavaScript",
+  "keywords" : ["jute", "hadoop", "serialization"],
+  "author" : "Eric Naeseth <eric@naeseth.com>",
+  "version" : "0.0.1",
+  "licenses" : [
+    {
+      "type" : "MIT",
+      "url" : "http://github.com/enaeseth/node-jute/raw/master/LICENSE"
+    }
+  ],
+  "engines" : {
+    "node" : ">=0.6.1"
+  },
+  "directories" : {
+    "lib" : "./lib"
+  },
+  "main" : "./lib/jute/index",
+  "dependencies" : {
+    "bigint" : ">= 0.3.0"
+  },
+  "devDependencies" : {
+    "coffee-script" : ">= 1.0.1"
+  },
+  "homepage" : "https://github.com/enaeseth/node-jute",
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/enaeseth/node-jute.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/enaeseth/node-jute/issues"
+  },
+  "scripts" : {
+    "preinstall": "make js"
+  }
+}
