@@ -1,7 +1,7 @@
 util = require "util"
 types = require "../types"
 
-serialize = (record, buffer, offset) ->
+exports.serialize = (record, buffer, offset) ->
   buffer ?= new Buffer(1)
   offset ?= 0
 
