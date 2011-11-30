@@ -13,6 +13,9 @@ exports.VectorType = class VectorType extends Type
 
 exports.RecordType = class RecordType
   constructor: (name, fields) ->
+    throw new Error("RecordType name required") unless name?
+    throw new Error("RecordType fields required") unless fields?
+
     class Record
       constructor: (vals) ->
         if vals?
