@@ -1,5 +1,5 @@
 Jute
-===
+====
 
 Jute is a partial implementation of [Hadoop][hadoop]'s
 [record serialization format][apache-jute]. 
@@ -7,7 +7,7 @@ Jute is a partial implementation of [Hadoop][hadoop]'s
 Example (CoffeScript)
 ---------------------
 
-    jute = require "jute"
+    jute = require "hadoop-jute"
 
     ExampleRecord = jute.RecordType "ExampleRecord",
       name: jute.types.ustring
