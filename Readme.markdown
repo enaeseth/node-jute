@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/enaeseth/node-jute.png)](http://travis-ci.org/enaeseth/node-jute)
 Jute
 ====
 
